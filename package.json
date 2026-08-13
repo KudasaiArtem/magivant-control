@@ -1,0 +1,27 @@
+{
+  "name": "magivant-control",
+  "version": "1.0.0",
+  "description": "Unofficial Windows client for Leteciel Magivant DAC. Gives full control of the hardware settings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KudasaiArtem/magivant-control.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KudasaiArtem/magivant-control/issues"
+  },
+  "homepage": "https://github.com/KudasaiArtem/magivant-control#readme",
+  "devDependencies": {
+    "electron": "^43.4.0"
+  },
+  "dependencies": {
+    "node-hid": "^3.4.0"
+  }
+}
