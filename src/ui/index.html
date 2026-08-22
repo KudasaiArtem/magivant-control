@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magivant Control</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="connection-status">
+            Connection: <span id="is-connected">Disconnected</span>
+        </div>
+    </header>
+
+    <main class="settings-container">
+        <div class="column-container">
+            <section class="setting-card">
+                <h2>Gain</h2>
+                <div class="settings-wrapper">
+                    <label>
+                        <input type="radio" name="gain" value="1">
+                        <span>Low</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gain" value="2">
+                        <span>High</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="setting-card">
+                <h2>DAC Mode</h2>
+                <div class="settings-wrapper">
+                    <label>
+                        <input type="radio" name="dac-mode" value="1">
+                        <span>Single DAC</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="dac-mode" value="2">
+                        <span>Dual DAC</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="setting-card">
+                <h2>Output Switch</h2>
+                <div class="settings-wrapper">
+                    <label>
+                        <input type="radio" name="output" value="1">
+                        <span>Output 1</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="output" value="2">
+                        <span>Output 2</span>
+                    </label>
+                </div>
+            </section>
+        </div>
+
+        <div class="column-container">
+            <section class="setting-card">
+                <h2>Digital Filters</h2>
+                <div class="settings-wrapper">
+                    <label>
+                        <input type="radio" name="digital-filter" value="1">
+                        <span>Fast roll-off Low latency</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="digital-filter" value="2">
+                        <span>Fast roll-off Phase compensated</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="digital-filter" value="3">
+                        <span>Slow roll-off Low latency</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="digital-filter" value="4">
+                        <span>Slow roll-off Phase compensated</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="digital-filter" value="5">
+                        <span>Non-over sampling (NOS)</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="setting-card">
+                <h2>Volume</h2>
+                <div class="volume-wrapper">
+                    <input type="range" id="volume-slider" min="0" max="60" step="1" value="0">
+                    <span id="volume-level">0</span>
+                </div>
+            </section>
+        </div>
+
+        <div class="column-container">
+            <section class="setting-card">
+                <h2>LED</h2>
+                <div class="settings-wrapper">
+                    <label>
+                        <input type="radio" name="led" value="1">
+                        <span>On</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="led" value="2">
+                        <span>Off (No Save)</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="led" value="3">
+                        <span>Off (Save)</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="setting-card">
+                <h2>DEPOP Filter</h2>
+                <div class="settings-wrapper">
+                    <label>
+                        <input type="radio" name="depop" value="1">
+                        <span>Off</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="depop" value="2">
+                        <span>On</span>
+                    </label>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <span id="version">v1.0.0</span>
+    </footer>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
